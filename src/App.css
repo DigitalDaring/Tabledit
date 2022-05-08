@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +13,32 @@
   color: white;
 }
 
+.NavHeader {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.CardHeader {
+  background: rgb(98,100,169);
+  background: linear-gradient(176deg, rgba(200,200,242,.8) 0%, rgba(203,205,242,.8) 100%);
+  width: calc(100% + 24px);
+  height: 33%;
+  margin: -12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.CardHeader h1 {
+  font-size: 60px;
+  text-shadow: 1px 3px rgba(0, 0, 0, .09);
 }
 
 @keyframes App-logo-spin {

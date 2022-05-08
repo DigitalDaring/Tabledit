@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background: rgb(67,68,101);
+    background: linear-gradient(176deg, rgba(67,68,101,1) 0%, rgba(0,0,0,1) 100%);
+    transition: height 100ms;
+    height: 0;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+nav.isOpen {
+    height: 100vh;
+}
+
+nav a {
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    color: #FFF;
+    font-size: 36px;
+    width: 100%;
+    text-align: left;
+}
+
+@media only screen and (min-width: 720px) {
+    nav {
+        margin-left: auto;
+        margin-right: 0;
+        max-width: 480px;
+    }
+
+    nav a {
+        width: calc(100% - 20px);
+        text-align: right;
+    }
+}
+
+nav a:hover {
+    background-color: var(--theme-bold-color);
+}

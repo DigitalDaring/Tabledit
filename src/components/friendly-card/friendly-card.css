@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #FFF;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    width: minmax(auto, 240px);
+    margin: 12px;
+}
